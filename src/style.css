@@ -1,0 +1,38 @@
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: animate__fadeInUp;
+}
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicators {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: transform 0.5s ease-out;
+}
+
+.indicator.active {
+  transform: scale(1.5);
+  background-color: #000;
+}

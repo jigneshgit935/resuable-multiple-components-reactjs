@@ -1,0 +1,45 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel button {
+  margin-top: 10px;
+}
+
+.animate__animated {
+  animation-duration: 1s;
+}
+
+.animate__slideInRight {
+  animation-name: slideInRight;
+}
+
+.animate__slideInLeft {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
